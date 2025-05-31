@@ -7,20 +7,36 @@
     --color-primary-blue: #1EAEDB;
     --color-secondary-purple: #8B5CF6;
     /* colors textos */
-    --color-text-heading: #FFFFFF;
-    --color-text-description: #9CA3AF;
+    --color-heading: #FFFFFF;
+    --color-description: #9CA3AF;
     /* colors borda */
     --color-border-default: #374151;
     --color-border-focus: #DAE4F2;
+    --color-border-card: #202022;
     /* colors componentes */
-    --color-surface-panel: #171718;
+    --color-surface-panel: #070608;
+    --color-surface-card: #171718;
     /* colors icon */
+    --color-surface-icon: #191625;
     --color-icon-default: #6B7280;
+    /* fundo */
+    --background-image-hero: url('/assets/background.svg');
+    /* fonts */
+    --font-inter: var(--font-inter-variable);
+    --font-orbitron: var(--font-orbitron-variable);
 }
 
 
 @layer base {
     body {
-        @apply bg-bg-main text-text-heading;
+        @apply bg-bg-main text-heading;
+    }
+
+    h1 {
+        @apply font-orbitron;
+    }
+
+    h2, h3, p, span {
+        @apply font-inter;
     }
 }
