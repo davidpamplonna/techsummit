@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+    /* fundo */
+    --color-bg-main: #020400;
+    /* colors destaques */
+    --color-primary-blue: #1EAEDB;
+    --color-secondary-purple: #8B5CF6;
+    /* colors textos */
+    --color-text-heading: #FFFFFF;
+    --color-text-description: #9CA3AF;
+    /* colors borda */
+    --color-border-default: #374151;
+    --color-border-focus: #DAE4F2;
+    /* colors componentes */
+    --color-surface-panel: #171718;
+    /* colors icon */
+    --color-icon-default: #6B7280;
+}
+
+
+@layer base {
+    body {
+        @apply bg-bg-main text-text-heading;
+    }
+}
