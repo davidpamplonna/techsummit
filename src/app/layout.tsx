@@ -3,12 +3,12 @@ import "./globals.css";
 
 import { Inter, Orbitron } from "next/font/google";
 
-export const inter = Inter({
+ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   weight: ["400", "500", "700"]
 });
-export const orbitron = Orbitron({
+ const orbitron = Orbitron({
   subsets: ["latin"],
   variable: "--font-orbitron",
   weight: ["500", "700"],
