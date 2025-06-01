@@ -250,7 +250,7 @@ export function InputForm() {
           type="submit"
           className="mt-4 bg-gradient-to-r from-secondary-purple to-primary-blue text-white font-semibold py-4 px-4 rounded-md hover:opacity-90 transition-opacity duration-300 cursor-pointer"
         >
-            {isSubmitting ? "Enviando..." : "Inscrever-se"}
+            {isSubmitting ? "Enviando..." : "Inscreva-se agora"}
         </button>
       </form>
     </div>
