@@ -64,11 +64,11 @@ export function InputForm() {
 
   if (submitted) {
     return (
-      <div className="flex flex-col items-center justify-center h-full mt-20">
-        <div className="bg-green-900/50 rounded-full p-4 mb-2">
+      <div className="flex flex-col items-center justify-center h-full mt-10 py-2 md:mt-20">
+        <div className="bg-green-900/50 rounded-full p-4 mb-4">
           <CheckCircle className="w-8 h-8 text-green-600 " />
         </div>
-        <h2 className="text-2xl mb-4 font-bold">
+        <h2 className="text-2xl mb-4 font-bold text-center">
           Inscrição realizada com sucesso!
         </h2>
         <p className="text-sm text-center text-description">
@@ -194,15 +194,15 @@ export function InputForm() {
             <input
               {...register("terms")}
               type="checkbox"
-              className="hidden peer"
+              className="hidden peer "
             />
             <span
               className={`
         w-4 h-4 rounded border-2 
-        border-border-focus 
+        border-border-defeault 
         flex items-center justify-center 
         transition-all duration-200
-        peer-checked:bg-white ${
+        peer-checked:bg-white peer-checked:border-none ${
           errors.terms ? "border-red-500" : "border-border-default"
         }
       `}

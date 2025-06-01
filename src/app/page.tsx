@@ -22,7 +22,7 @@ export default function Home() {
     }
 
   return (
-    <section className="bg-hero bg-repeat min-h-screen w-full relative">
+    <section className="bg-hero bg-repeat min-h-screen w-full relative overflow-hidden">
       <div className="absolute w-[450px] h-[450px] bg-secondary-purple left-[72%] top-[-50px] rounded-full blur-[150px] opacity-20" />
 
       <div className="container mx-auto max-w-6xl py-12 ">
@@ -52,7 +52,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
             {/* cols-left */}
             <div className="flex flex-col">
-              <h3 className="font-bold text-xl md:text-2xl bg-gradient-to-r from-primary-blue to-secondary-purple bg-clip-text text-transparent ">
+              <h3 className="text-xl md:text-2xl font-bold bg-gradient-to-r via-secondary-purple from-primary-blue to-secondary-purple bg-clip-text text-transparent">
                 Por que participar
               </h3>
               <div className="mt-7">
@@ -75,7 +75,7 @@ export default function Home() {
               </div>
             </div>
             {/* cols-right */}
-            <div className="bg-surface-panel border border-border-card rounded-md p-8 space-y-5">
+            <div className="bg-surface-panel border border-border-card rounded-md p-4 md:p-8 space-y-5 py-7">
               <h2 className="font-bold text-2xl mb-2">Garanta sua vaga</h2>
               <p className="text-description text-sm">Preencha o formulário abaixo para garantir sua participação no evento de tecnologia mais aguardado do ano.</p>
               <div className="mt-6 space-y-4 w-full">
