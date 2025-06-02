@@ -15,4 +15,4 @@ Este projeto serve como uma base para eventos de tecnologia, conferências ou ha
 
 ## 🌐 Deploy
 
-O projeto está hospedado na Vercel e pode ser acessado através do seguinte link: https://vercel.com/david-pamplona-projects/techsummit.
+O projeto está hospedado na Vercel e pode ser acessado através do seguinte link: <a href="https://techsummit-david-pamplona-projects.vercel.app/" target="_blank">Clique aqui para acessar o projeto</a>.
