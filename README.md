@@ -1,7 +1,10 @@
 # TechSummit
 
 **TechSummit** é uma aplicação web desenvolvida com [Next.js](https://nextjs.org/) e hospedada na [Vercel](https://vercel.com/).  
-Este projeto serve como uma base para eventos de tecnologia, conferências ou hackathons, oferecendo uma estrutura moderna e escalável para divulgação e gerenciamento de eventos.
+
+Esse é um projeto de um formulário de inscrição para o Tech Summit, um projeto pessoal criado para aprimorar minhas habilidades em desenvolvimento web e entregar uma experiência boa para o usuário.
+
+Comecei pelo protótipo no Figma e, em seguida, coloquei a mão na massa no código. Com esse projeto, aprofundei meus conhecimentos em responsividade, validação de formulários, componentização e na criação de um layout atrativo e fluido.
 
 ## 🚀 Tecnologias Utilizadas e Bibliotecas
 
