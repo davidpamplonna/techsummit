@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { CheckCircle, Mail, User } from "lucide-react";
 import Link from "next/link";
@@ -26,8 +26,6 @@ export function InputForm() {
   const [isEmailFocused, setIsEmailFocused] = useState(false);
   const [emailValue, setEmailValue] = useState("");
 
-
-
   const {
     register,
     handleSubmit,
@@ -51,7 +49,6 @@ export function InputForm() {
     onChange: emailOnChange,
     name: emailRegisterName,
   } = register("email");
-
 
   const onSubmit = (data: FormData) => {
     setIsSubmitting(true);
@@ -95,28 +92,31 @@ export function InputForm() {
               errors.name ? "border-red-500" : "border-border-default"
             } focus-within:border-border-focus transition-all duration-300`}
           >
-            <User 
-            className={`transition-colors duration-200 ${
-              isNameFocused || nameValue !== "" ? "text-border-focus" : "text-gray-400"
-            }`}
-            size={18} />
+            <User
+              className={`transition-colors duration-200 ${
+                isNameFocused || nameValue !== ""
+                  ? "text-border-focus"
+                  : "text-gray-400"
+              }`}
+              size={18}
+            />
             <input
               className="placeholder:text-icon-default text-sm outline-none w-full "
               placeholder="Digite seu nome completo"
               id="name"
               type="text"
               name={nameRegisterName}
-            ref={nameRef}
-            onFocus={() => setIsNameFocused(true)}
-            onBlur={(e) => {
-              setIsNameFocused(false);
-              nameOnBlur(e);
-            }}
-            onChange={(e) => {
-              setNameValue(e.target.value);
-              nameOnChange(e);
-            }}
-            value={nameValue}
+              ref={nameRef}
+              onFocus={() => setIsNameFocused(true)}
+              onBlur={(e) => {
+                setIsNameFocused(false);
+                nameOnBlur(e);
+              }}
+              onChange={(e) => {
+                setNameValue(e.target.value);
+                nameOnChange(e);
+              }}
+              value={nameValue}
             />
           </div>
           {errors.name && (
@@ -133,28 +133,31 @@ export function InputForm() {
               errors.email ? "border-red-500" : "border-border-default"
             } focus-within:border-border-focus transition-all duration-300`}
           >
-            <Mail 
-            className={`transition-colors duration-200 ${
-              isEmailFocused || emailValue !== "" ? "text-border-focus" : "text-gray-400"
-            }`}
-            size={18} />
+            <Mail
+              className={`transition-colors duration-200 ${
+                isEmailFocused || emailValue !== ""
+                  ? "text-border-focus"
+                  : "text-gray-400"
+              }`}
+              size={18}
+            />
             <input
               className="placeholder:text-icon-default text-sm outline-none w-full "
               placeholder="Digite seu e-mail"
               id="email"
               type="email"
               name={emailRegisterName}
-            ref={emailRef}
-            onFocus={() => setIsEmailFocused(true)}
-            onBlur={(e) => {
-              setIsEmailFocused(false);
-              emailOnBlur(e);
-            }}
-            onChange={(e) => {
-              setEmailValue(e.target.value);
-              emailOnChange(e);
-            }}
-            value={emailValue}
+              ref={emailRef}
+              onFocus={() => setIsEmailFocused(true)}
+              onBlur={(e) => {
+                setIsEmailFocused(false);
+                emailOnBlur(e);
+              }}
+              onChange={(e) => {
+                setEmailValue(e.target.value);
+                emailOnChange(e);
+              }}
+              value={emailValue}
             />
           </div>
           {errors.email && (
@@ -166,7 +169,7 @@ export function InputForm() {
         {/* input select */}
         <div className="flex flex-col space-y-2 mb-4">
           <label htmlFor="ticket" className="text-sm">
-            Cago ou área de atuação
+            Cargo ou área de atuação
           </label>
           <select
             {...register("ticket")}
@@ -222,35 +225,35 @@ export function InputForm() {
               </svg>
             </span>
           </label>
-           <span className="text-[13px]">
-              Li e concordo com os{" "}
-              <Link
-                href="/"
-                className="text-secondary-purple hover:text-[#695ce8]"
-              >
-                Termos de uso
-              </Link>{" "}
-              e{" "}
-              <Link
-                href="/"
-                className="text-secondary-purple hover:text-[#695ce8]"
-              >
-                Política de privacidade
-              </Link>
-            </span>
+          <span className="text-[13px]">
+            Li e concordo com os{" "}
+            <Link
+              href="/"
+              className="text-secondary-purple hover:text-[#695ce8]"
+            >
+              Termos de uso
+            </Link>{" "}
+            e{" "}
+            <Link
+              href="/"
+              className="text-secondary-purple hover:text-[#695ce8]"
+            >
+              Política de privacidade
+            </Link>
+          </span>
         </div>
         {errors.terms && (
-              <span className="text-red-500 text-xs">
-                Você deve aceitar os termos de uso
-              </span>
-            )}
+          <span className="text-red-500 text-xs">
+            Você deve aceitar os termos de uso
+          </span>
+        )}
         {/* butoon */}
         <button
-        disabled={isSubmitting}
+          disabled={isSubmitting}
           type="submit"
           className="mt-4 bg-gradient-to-r from-secondary-purple to-primary-blue text-white font-semibold py-4 px-4 rounded-md hover:opacity-90 transition-opacity duration-300 cursor-pointer"
         >
-            {isSubmitting ? "Enviando..." : "Inscreva-se agora"}
+          {isSubmitting ? "Enviando..." : "Inscreva-se agora"}
         </button>
       </form>
     </div>
